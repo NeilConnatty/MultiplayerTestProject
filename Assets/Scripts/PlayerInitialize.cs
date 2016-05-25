@@ -11,8 +11,6 @@ public class PlayerInitialize : NetworkBehaviour
                 ((MonoBehaviour) gameObject.GetComponent("MouseLooker")).enabled = true;
                 ((MonoBehaviour) gameObject.GetComponent("Controller")).enabled = true;
                 gameObject.transform.FindChild("Main Camera").gameObject.SetActive(true);
-            } else {
-                gameObject.SetActive(false);
             }
         } else {
             if (isLocalPlayer) {

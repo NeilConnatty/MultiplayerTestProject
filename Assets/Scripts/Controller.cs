@@ -30,8 +30,6 @@ public class Controller : NetworkBehaviour {
 			// Apply gravity (so the object will fall if not grounded)
 			movement.y -= gravity * Time.deltaTime;
 
-			Debug.Log ("Movement Vector = " + movement);
-
 			// Actually move the character controller in the movement direction
 			myController.Move(movement);
 		}
