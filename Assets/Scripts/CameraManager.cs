@@ -3,7 +3,7 @@ using UnityEngine.Networking;
 
 public class CameraManager : NetworkBehaviour
 {
-    void Start ()
+    void DisableCamera ()
     {
         if (isServer) gameObject.SetActive(false);
     }
