@@ -7,13 +7,7 @@ public class WinGame : MonoBehaviour
 
     void OnMouseDown()
     {
-        StartCoroutine(LoadNextLevel());
+        Application.LoadLevel (levelAfterVictory);
 	}
 
-	// load the nextLevel after delay
-	IEnumerator LoadNextLevel()
-    {
-		yield return new WaitForSeconds(1.5f);
-		Application.LoadLevel (levelAfterVictory);
-	}
 }

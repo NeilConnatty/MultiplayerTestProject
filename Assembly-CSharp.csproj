@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{31FBD67B-AAE1-6B21-C483-80449C3A2B58}</ProjectGuid>
+    <ProjectGuid>{8547FB4D-F18F-E453-6AFB-D2A8353659BF}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -45,11 +45,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\ArrowKeysController.cs" />
+     <Compile Include="Assets\Scripts\ArrowKeysLooker.cs" />
+     <Compile Include="Assets\Scripts\ArrowKeysPlayerInitialize.cs" />
+     <Compile Include="Assets\Scripts\Button.cs" />
      <Compile Include="Assets\Scripts\CameraEnable.cs" />
+     <Compile Include="Assets\Scripts\CameraManager.cs" />
      <Compile Include="Assets\Scripts\Controller.cs" />
      <Compile Include="Assets\Scripts\CubePlayer.cs" />
      <Compile Include="Assets\Scripts\MouseLooker.cs" />
      <Compile Include="Assets\Scripts\PlayerInitialize.cs" />
+     <Compile Include="Assets\Scripts\RenderMesh.cs" />
+     <Compile Include="Assets\Scripts\WinGame.cs" />
+     <None Include="Assets\Standard Assets\Prototyping\Shaders\WorldCoordDiffuse.shader" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
      <None Include="Assets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
      <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
@@ -63,7 +71,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{5689FE6C-D856-6AE9-7B99-AB725836E1E4}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+      <Project>{31900B34-3921-6A80-07C6-C0982360E41D}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
