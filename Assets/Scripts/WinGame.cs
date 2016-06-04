@@ -1,13 +1,16 @@
 using UnityEngine;
+using UnityEngine.Networking;
 using System.Collections;
 
-public class WinGame : MonoBehaviour
+public class WinGame : NetworkBehaviour
 {
     public string levelAfterVictory;
 
     void OnMouseDown()
     {
-        Application.LoadLevel (levelAfterVictory);
+        if (isServer) GameManager.gm.LevelComplete ();
 	}
+
+
 
 }
